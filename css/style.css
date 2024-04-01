@@ -3,9 +3,35 @@
     padding: 0;
     box-sizing: border-box;
   }
+/* 
+.div_rec{
+    background-color: rgb(28, 28, 27);
+    height: 100px;
+} */
 
- .image img{
-    width: 99vw;
-    object-fit: cover;
-    height: 110vh;
- }
+nav ul a li{
+    list-style-type: none;
+}
+nav ul a{
+    text-decoration: none;
+   
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+   justify-content: center;
+}
+header{
+    background-color: bisque;
+    
+}
+.logo{
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
