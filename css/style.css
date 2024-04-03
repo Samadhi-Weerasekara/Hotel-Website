@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#logo {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+}
+
+#LogoWithText h3 {
+  font-family: "Red Hat Display", sans-serif;
+  text-transform: uppercase;
+  color: #2b7a3e;
+  font-weight: lighter;
+}
+.container-fluid {
+  height: 30px;
+  background-color: #212540;
+}
+
+nav ul a {
+  text-decoration: none;
+}
+
+ a li:hover {
+  color: #2b7a3e;
+  font-weight: 600;
+}
+li::before {
+  content: "";
+  background-color: #2b7a3e;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+}
+
+nav ul a li {
+  list-style-type: none;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: black;
+  margin-top: 10px;
+  font-weight: 600;
+}
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+.container-fluid h5 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin-left: 5px;
+  font-family: "Red Hat Display", sans-serif;
+}
