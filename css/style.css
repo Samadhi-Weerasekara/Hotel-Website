@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 }
-#logo {
+#mainlogo {
   width: 100px;
   height: 100px;
   margin-top: 10px;
@@ -12,39 +12,48 @@ body {
   font-family: "Red Hat Display", sans-serif;
   text-transform: uppercase;
   color: #2b7a3e;
-  font-weight: lighter;
+  font-weight: normal;
 }
-.container-fluid {
-  height: 30px;
+.sub {
+  /* height: 30px; */
   background-color: #212540;
 }
-
+.main {
+  background-color: #212540;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+.logoMain {
+  width: 100px;
+  height: 100px;
+  /* margin-top: 10px; */
+}
 nav ul a {
   text-decoration: none;
 }
 
- a li:hover {
-  color: #2b7a3e;
-  font-weight: 600;
-}
-li::before {
-  content: "";
-  background-color: #2b7a3e;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 3px;
-  width: 100%;
+li:hover {
+  text-decoration: underline;
+  text-underline-offset: 10px;
 }
 
 nav ul a li {
   list-style-type: none;
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "PT Serif", serif;
   font-weight: normal;
   text-transform: uppercase;
   color: black;
   margin-top: 10px;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+nav ul a .active {
+  text-decoration: underline;
+  text-underline-offset: 10px;
 }
 .carousel-item img {
   height: 500px;
@@ -55,5 +64,161 @@ nav ul a li {
   font-weight: 400;
   font-size: 0.9rem;
   margin-left: 5px;
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "PT Serif", serif;
+}
+
+.arrival {
+  background-color: #212540;
+  height: 200px;
+}
+
+.form-controlll {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 190px;
+}
+
+.form-controlll input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #fff solid;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+.form-controlll input:focus,
+.form-controlll input:valid {
+  outline: 0;
+  border-bottom-color: lightblue;
+}
+
+.form-controlll label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  pointer-events: none;
+}
+
+.form-controlll label span {
+  display: inline-block;
+  font-size: 15px;
+  min-width: 5px;
+  color: #fff;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  font-family: "PT Serif", serif;
+}
+
+.form-controlll input:focus + label span,
+.form-controlll input:valid + label span {
+  color: lightblue;
+  transform: translateY(-30px);
+}
+
+.check {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #183153;
+  font-family: "PT Serif", serif;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+}
+
+.check:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #ffd401;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+.check:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+.check span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 15px 20px;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+.check:hover span {
+  color: #183153;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.book {
+  border: 1px solid #2b7a3e;
+  background-color: #2b7a3e;
+  border-radius: 0;
+  padding: 0.5em 1em 0.5em 1em;
+  transition: all ease-in-out 0.2s;
+  font-size: 16px;
+  margin-top: -50px;
+  text-transform: uppercase;
+  font-family: "PT Serif", serif;
+}
+.book:hover {
+  background-color: #183153;
+  border: 1px solid #183153;
+  color: #fff;
+  border-radius: 0;
+}
+.col img,.square{
+  height: 270px;
+  width: 230px;
+  object-fit: cover;
+
+}
+
+.colOne .square{
+  background-color: #fff;
+}
+.colTwo .square{
+  background-color: #212540;
+}
+@media screen and (max-width: 992px) {
+  #logotxt,
+  .logo,
+  #navbar,
+  .book,
+  .first,
+  #firstrow {
+    display: none;
+  }
+  .main {
+    display: flex;
+  }
+
 }
