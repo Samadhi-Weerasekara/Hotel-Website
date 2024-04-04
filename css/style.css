@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+ 
 }
 #mainlogo {
   width: 100px;
@@ -13,6 +14,7 @@ body {
   text-transform: uppercase;
   color: #2b7a3e;
   font-weight: normal;
+  
 }
 .sub {
   /* height: 30px; */
@@ -69,7 +71,8 @@ nav ul a .active {
 
 .arrival {
   background-color: #212540;
-  height: 200px;
+  /* height: 200px; */
+  padding: 20px;
 }
 
 .form-controlll {
@@ -195,18 +198,93 @@ nav ul a .active {
   color: #fff;
   border-radius: 0;
 }
-.col img,.square{
+.col img,
+.square {
   height: 270px;
   width: 230px;
   object-fit: cover;
-
 }
 
-.colOne .square{
+.colOne .square {
   background-color: #fff;
 }
-.colTwo .square{
+.colTwo .square {
   background-color: #212540;
+}
+
+.square {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.squareOne {
+  color: black;
+  padding: 20px;
+  font-family: "PT Serif", serif;
+  text-align: center;
+}
+
+.squareTwo {
+  color: white;
+  padding: 20px;
+  font-family: "PT Serif", serif;
+  text-align: center;
+}
+
+.colOne {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.colTwo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.Text {
+  margin: 30px;
+}
+.Text h2 {
+  font-family: "PT Serif", serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.Text p {
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  display: inline-flex;
+  margin-left: 10vw;
+  margin-top: 10vh;
+}
+
+.exploreButton {
+  border: 1px solid #183153;
+  background-color: #183153;
+  padding: 0.5em 1em 0.5em 1em;
+  transition: all ease-in-out 0.2s;
+  font-size: 16px;
+  margin-top: -50px;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  margin-top: 20px;
+}
+.exploreButton:hover {
+  border: 1px solid #212540;
+  background-color: #212540;
+}
+.secondPage {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width: 992px) {
   #logotxt,
@@ -221,4 +299,45 @@ nav ul a .active {
     display: flex;
   }
 
+  .secondPage {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  .Text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .colOne .square {
+    background-color: #212540;
+  }
+
+  .squareOne {
+    color: white;
+  }
+
+}
+
+@media screen and (max-width: 534px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .colOne .square {
+    background-color: #212540;
+  }
+
+  .squareOne {
+    color: white;
+  }
+
+  .Text {
+    text-align: center;
+  }
+  .arrival{
+    display: flex;
+    flex-direction: column;
+  }
 }
