@@ -1,8 +1,8 @@
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding: 2px 4px 2px;
-    width: 99vw;
+    padding: 0 4px;
+    /* width: 99vw; */
     
   }
   
