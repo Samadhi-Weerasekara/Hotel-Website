@@ -1,0 +1,98 @@
+video{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    z-index: 000;
+
+}
+
+.TittleMain{
+    font-family: "PT Serif", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.TittleMain h2{
+    font-weight: bold;
+    margin: 30px;
+    color: #212540;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+
+}
+
+.MainDishes h2{
+    font-weight: bold;
+    color: chocolate;
+    font-size: 2rem;
+    font-family: "PT Serif", serif;
+    text-transform: uppercase;
+    text-align: center;
+    
+
+}
+.exploreButton{
+    text-transform: capitalize;
+    font-family: "PT Serif", serif;
+}
+
+hr.solid {
+    border-top: 1px solid #464646;
+    margin-left: 10vw;
+    margin-right: 10vw;
+
+  }
+
+ .foodTittle img{
+    height: 315px;
+    width: 300px;
+    object-fit: cover;
+ }
+ .foodTittle{
+    display: flex;
+    flex-direction: column;
+    font-family: "PT Serif", serif;
+    margin-left: 150px;
+    margin-right: 50px;
+ }
+
+ .para{
+    display: flex;
+    flex-direction: column;
+    font-family: "PT Serif", serif;
+    justify-content: center;
+    /* margin-right: 50px; */
+ }
+
+ .wrapper{
+    display: inline-flex;
+    grid-template-columns: repeat(2,1fr);
+    
+ }
+
+ @media screen and (max-width: 992px) {
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+    .foodTittle{
+        margin: auto;
+        align-items: center;
+     }
+     .para{
+        align-items: center;
+        margin-top: 30px;
+     }
+     .para p{
+        text-align: center;
+     }
+     .foodTittle img{
+        height: 315px;
+        width: 70vw;
+        
+     }
+     .TittleMain{
+        text-align: center;
+     }
+ }

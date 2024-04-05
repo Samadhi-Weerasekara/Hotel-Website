@@ -286,6 +286,30 @@ nav ul a .active {
   justify-content: center;
   align-items: center;
 }
+:root {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.footer {
+  /* position: absolute; */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background: #212540;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  font-weight: lighter;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
 @media screen and (max-width: 992px) {
   #logotxt,
   .logo,
@@ -297,6 +321,12 @@ nav ul a .active {
   }
   .main {
     display: flex;
+  }
+
+  .mainlogotwo{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
   }
 
   .secondPage {
@@ -316,6 +346,11 @@ nav ul a .active {
 
   .squareOne {
     color: white;
+  }
+  #mainlogo {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
   }
 
 }
@@ -340,4 +375,5 @@ nav ul a .active {
     display: flex;
     flex-direction: column;
   }
+ 
 }
