@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
- 
 }
 #mainlogo {
   width: 100px;
@@ -14,7 +13,6 @@ body {
   text-transform: uppercase;
   color: #2b7a3e;
   font-weight: normal;
-  
 }
 .sub {
   /* height: 30px; */
@@ -209,7 +207,7 @@ nav ul a .active {
   background-color: #fff;
 }
 .colTwo .square {
-  background-color: #212540;
+  background-color: slategray;
 }
 
 .square {
@@ -223,6 +221,7 @@ nav ul a .active {
   padding: 20px;
   font-family: "PT Serif", serif;
   text-align: center;
+ 
 }
 
 .squareTwo {
@@ -250,8 +249,9 @@ nav ul a .active {
 }
 .Text h2 {
   font-family: "PT Serif", serif;
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 2.25rem;
+  font-weight: lighter;
+  text-transform: uppercase;
 }
 
 .Text p {
@@ -309,6 +309,185 @@ nav ul a .active {
   font-size: 1rem;
   margin-top: 20px;
 }
+.amentities{
+  margin-top: 70px;
+}
+.amentities h2 {
+  text-align: center;
+  font-family: "PT Serif", serif;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  margin: 20px;
+  text-transform: uppercase;
+}
+.icons-with-text{
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.icons-with-text h3{
+  font-family: "PT Serif", serif;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.amentFirst{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.amentSecond{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonials h2{
+  text-align: center;
+  font-family: "PT Serif", serif;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  margin: 30px;
+  text-transform: uppercase;
+}
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+figure.snip1157 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  color: #333;
+  text-align: left;
+  box-shadow: none !important;
+}
+figure.snip1157 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+figure.snip1157 img {
+  max-width: 100%;
+  vertical-align: middle;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  margin: 40px 0 0 10px;
+}
+figure.snip1157 blockquote {
+  display: block;
+  border-radius: 8px;
+  position: relative;
+  background-color: gainsboro;
+  padding: 25px 50px 30px 50px;
+  font-size: 0.8em;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.6em;
+  font-style: italic;
+}
+figure.snip1157 blockquote:before,
+figure.snip1157 blockquote:after {
+  font-family: 'FontAwesome';
+  content: "\201C";
+  position: absolute;
+  font-size: 50px;
+  opacity: 0.3;
+  font-style: normal;
+}
+figure.snip1157 blockquote:before {
+  top: 25px;
+  left: 20px;
+}
+figure.snip1157 blockquote:after {
+  content: "\201D";
+  right: 20px;
+  bottom: 0;
+}
+figure.snip1157 .arrow {
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid gainsboro;
+  margin: 0;
+  position: absolute;
+}
+figure.snip1157 .author {
+  position: absolute;
+  bottom: 45px;
+  padding: 0 10px 0 120px;
+  margin: 0;
+  text-transform: uppercase;
+  color: #ffffff;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+}
+figure.snip1157 .author h5 {
+  opacity: 0.8;
+  margin: 0;
+  font-weight: 800;
+}
+figure.snip1157 .author h5 span {
+  font-weight: 400;
+  text-transform: none;
+  padding-left: 5px;
+}
+
+
+.ideas{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+}
+
+.descrip {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 40px;
+  background-color: antiquewhite;
+  width: 100%;
+ 
+}
+
+.descrip img {
+  height: 300px;
+  width: 500px;
+  object-fit: cover;
+  padding: 20px;
+
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.text p {
+  text-align: justify;
+  font-family: "PT Serif", serif;
+  font-size: 1.125rem;
+}
+
+video{
+  width: 50vw;
+  height: 400px;
+  object-fit: cover;
+  z-index: 000;
+   padding: 20px;
+}
+.tittleMain{
+  font-family: "PT Serif", serif;
+}
 
 @media screen and (max-width: 992px) {
   #logotxt,
@@ -323,7 +502,7 @@ nav ul a .active {
     display: flex;
   }
 
-  .mainlogotwo{
+  .mainlogotwo {
     width: 100px;
     height: 100px;
     margin-top: 10px;
@@ -352,7 +531,43 @@ nav ul a .active {
     height: 100px;
     margin-top: 10px;
   }
+  .icons-with-text{
+    text-align: center;
+  }
+  .amentFirst{
+    display: grid;
+    place-items: center;
+   
+  }
+  .amentSecond{
+    display: grid;
+    place-items: center;
+  }
+  .amentities{
+    margin-top: auto;
+  }
+  .ideas{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    place-items: center;
+  }
+  .descrip {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* margin: 40px; */
+    place-items: center;
+    text-align: center;
 
+  }
+  
+  .text {
+    margin: auto;
+  }
+
+  video{
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 534px) {
@@ -371,9 +586,14 @@ nav ul a .active {
   .Text {
     text-align: center;
   }
-  .arrival{
+  .arrival {
     display: flex;
     flex-direction: column;
   }
- 
+  .ideas{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+    place-items: center;
+  }
 }

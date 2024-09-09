@@ -1,0 +1,51 @@
+video {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  z-index: 000;
+}
+
+.paragraph-description {
+  font-family: "PT Serif", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 50px;
+  
+}
+.paragraph-description h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.paragraph-description {
+  text-align: center;
+  font-size: 1.125rem;
+}
+.google-map {
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.google-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+@media screen and (max-width:992px) {
+  .paragraph-description {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    
+  }
+}
