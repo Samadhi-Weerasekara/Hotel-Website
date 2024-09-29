@@ -1,1 +1,1 @@
-A responsive and modern website for a hotel, built using HTML and CSS. The website features a clean design with sections for hotel information, room types, services, and contact details. It includes a fully functional navigation menu and a visually appealing layout that adjusts smoothly across different devices.
+
