@@ -40,7 +40,7 @@ li:hover {
   text-underline-offset: 10px;
 }
 
-nav ul a li {
+nav ul li a {
   list-style-type: none;
   font-family: "PT Serif", serif;
   font-weight: normal;
@@ -51,7 +51,7 @@ nav ul a li {
   font-size: 1rem;
 }
 
-nav ul a .active {
+nav ul li.active {
   text-decoration: underline;
   text-underline-offset: 10px;
 }
