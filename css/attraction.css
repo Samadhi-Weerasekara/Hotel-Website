@@ -11,9 +11,7 @@ video {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-top: 50px;
+  margin: 50px;
   
 }
 .paragraph-description h2 {
