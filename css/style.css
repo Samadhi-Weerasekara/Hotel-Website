@@ -40,8 +40,12 @@ li:hover {
   text-underline-offset: 10px;
 }
 
-nav ul li a {
+nav ul li  {
   list-style-type: none;
+ 
+}
+
+nav ul li a {
   font-family: "PT Serif", serif;
   font-weight: normal;
   text-transform: uppercase;
